@@ -1,0 +1,15 @@
+//
+//  SampleProjectSwiftPrefixHeader.pch
+//  SampleProjectSwift
+//
+//  Created by _Genesis_ on 6/16/16.
+//  Copyright © 2016 _Genesis_. All rights reserved.
+//
+
+#ifndef SampleProjectSwiftPrefixHeader_pch
+#define SampleProjectSwiftPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* SampleProjectSwiftPrefixHeader_pch */
