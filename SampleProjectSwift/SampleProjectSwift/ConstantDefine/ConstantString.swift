@@ -12,9 +12,5 @@ import UIKit
  - define constant string to use in whole project
  */
 
-class ConstantString: NSObject {
-    
-    let SAMPLE_STRING:String = ""
-    let BASE_URL:String = ""
-    
-}
+let SAMPLE_STRING:String = ""
+let BASE_URL:String = "http://14.63.219.203:5003"
