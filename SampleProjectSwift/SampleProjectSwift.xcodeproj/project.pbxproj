@@ -22,8 +22,11 @@
 		A0A4E4EA1D61936800BA5D16 /* TestNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4E4E91D61936800BA5D16 /* TestNextViewController.swift */; };
 		A0A4E4ED1D6195C200BA5D16 /* ShareSNSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4E4EC1D6195C200BA5D16 /* ShareSNSManager.swift */; };
 		A0A4E4F01D61A50D00BA5D16 /* LoginConnectorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4E4EF1D61A50D00BA5D16 /* LoginConnectorManager.swift */; };
-		A0A4E4F21D61A83A00BA5D16 /* ExtensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4E4F11D61A83A00BA5D16 /* ExtensionTableView.swift */; };
+		A0A4E4F21D61A83A00BA5D16 /* ExtensionTableViewAndCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4E4F11D61A83A00BA5D16 /* ExtensionTableViewAndCollectionView.swift */; };
 		A0EB3C631D5DC19000A352C1 /* ServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EB3C621D5DC19000A352C1 /* ServiceAPI.swift */; };
+		A0F1CE6F1D6439D300E8500A /* RealmConnectorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1CE6E1D6439D300E8500A /* RealmConnectorManager.swift */; };
+		A0F1CE721D64598500E8500A /* RealmTestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1CE711D64598500E8500A /* RealmTestObject.swift */; };
+		A0FCC67B1D66BEDC00083E7E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FCC67A1D66BEDC00083E7E /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,13 +64,16 @@
 		A0781C4A1D12B18D00147207 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = SampleProjectSwift/BaseViewController.swift; sourceTree = SOURCE_ROOT; };
 		A0781C4F1D12B2A200147207 /* ConstantString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantString.swift; sourceTree = "<group>"; };
 		A0781C511D12B7D000147207 /* SampleProjectSwiftPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleProjectSwiftPrefixHeader.pch; sourceTree = "<group>"; };
-		A0A4E4E51D616A4100BA5D16 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0A4E4E51D616A4100BA5D16 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../View/ViewController.swift; sourceTree = "<group>"; };
 		A0A4E4E71D617E2F00BA5D16 /* APIConnectorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConnectorManager.swift; sourceTree = "<group>"; };
-		A0A4E4E91D61936800BA5D16 /* TestNextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNextViewController.swift; sourceTree = "<group>"; };
+		A0A4E4E91D61936800BA5D16 /* TestNextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestNextViewController.swift; path = ../View/TestNextViewController.swift; sourceTree = "<group>"; };
 		A0A4E4EC1D6195C200BA5D16 /* ShareSNSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareSNSManager.swift; sourceTree = "<group>"; };
 		A0A4E4EF1D61A50D00BA5D16 /* LoginConnectorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConnectorManager.swift; sourceTree = "<group>"; };
-		A0A4E4F11D61A83A00BA5D16 /* ExtensionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionTableView.swift; sourceTree = "<group>"; };
+		A0A4E4F11D61A83A00BA5D16 /* ExtensionTableViewAndCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionTableViewAndCollectionView.swift; sourceTree = "<group>"; };
 		A0EB3C621D5DC19000A352C1 /* ServiceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAPI.swift; sourceTree = "<group>"; };
+		A0F1CE6E1D6439D300E8500A /* RealmConnectorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConnectorManager.swift; sourceTree = "<group>"; };
+		A0F1CE711D64598500E8500A /* RealmTestObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmTestObject.swift; path = ../RealmTestObject.swift; sourceTree = "<group>"; };
+		A0FCC67A1D66BEDC00083E7E /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		C645B69D4B81730A3CC9F7C3 /* Pods-SampleProjectSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleProjectSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleProjectSwift/Pods-SampleProjectSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		E1596A104D0DA04BFC01F341 /* Pods_SampleProjectSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleProjectSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,10 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				A0781C481D12B17B00147207 /* Util */,
-				A0EB3C641D5DC88D00A352C1 /* Common Template */,
-				A0781C451D12B17B00147207 /* Controller */,
 				A0781C461D12B17B00147207 /* Model */,
 				A0781C491D12B17B00147207 /* View */,
+				A0781C451D12B17B00147207 /* Controller */,
 				A0781C061D12A7DC00147207 /* AppDelegate.swift */,
 				A0781C471D12B17B00147207 /* Resource Images */,
 				A0781C0A1D12A7DC00147207 /* Main.storyboard */,
@@ -187,6 +192,8 @@
 		A0781C451D12B17B00147207 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A0A4E4E51D616A4100BA5D16 /* ViewController.swift */,
+				A0A4E4E91D61936800BA5D16 /* TestNextViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +201,8 @@
 		A0781C461D12B17B00147207 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0FCC67D1D66C6F200083E7E /* Other Object */,
+				A0FCC67C1D66C6E700083E7E /* Realm Object */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +217,8 @@
 		A0781C481D12B17B00147207 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A0EB3C641D5DC88D00A352C1 /* Common Template */,
+				A0FCC67A1D66BEDC00083E7E /* ImageLoader.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -215,8 +226,6 @@
 		A0781C491D12B17B00147207 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A0A4E4E51D616A4100BA5D16 /* ViewController.swift */,
-				A0A4E4E91D61936800BA5D16 /* TestNextViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,14 +257,39 @@
 		A0EB3C641D5DC88D00A352C1 /* Common Template */ = {
 			isa = PBXGroup;
 			children = (
-				A0A4E4F11D61A83A00BA5D16 /* ExtensionTableView.swift */,
+				A0F1CE701D64597300E8500A /* Realm DataBase */,
+				A0A4E4F11D61A83A00BA5D16 /* ExtensionTableViewAndCollectionView.swift */,
+				A0781C4A1D12B18D00147207 /* BaseViewController.swift */,
 				A0A4E4EE1D61A4EF00BA5D16 /* Login Connector */,
 				A0A4E4EB1D61959E00BA5D16 /* Share SNS Connector */,
-				A0781C4A1D12B18D00147207 /* BaseViewController.swift */,
 				A0781C4E1D12B28D00147207 /* ConstantDefine */,
 				A0781C441D12B17B00147207 /* API Connector */,
 			);
 			name = "Common Template";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A0F1CE701D64597300E8500A /* Realm DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				A0F1CE6E1D6439D300E8500A /* RealmConnectorManager.swift */,
+			);
+			name = "Realm DataBase";
+			sourceTree = "<group>";
+		};
+		A0FCC67C1D66C6E700083E7E /* Realm Object */ = {
+			isa = PBXGroup;
+			children = (
+				A0F1CE711D64598500E8500A /* RealmTestObject.swift */,
+			);
+			name = "Realm Object";
+			sourceTree = "<group>";
+		};
+		A0FCC67D1D66C6F200083E7E /* Other Object */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Object";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,13 +478,16 @@
 				A0A4E4E61D616A4100BA5D16 /* ViewController.swift in Sources */,
 				A0EB3C631D5DC19000A352C1 /* ServiceAPI.swift in Sources */,
 				A0A4E4ED1D6195C200BA5D16 /* ShareSNSManager.swift in Sources */,
-				A0A4E4F21D61A83A00BA5D16 /* ExtensionTableView.swift in Sources */,
+				A0A4E4F21D61A83A00BA5D16 /* ExtensionTableViewAndCollectionView.swift in Sources */,
 				A0A4E4E81D617E2F00BA5D16 /* APIConnectorManager.swift in Sources */,
 				A0781C501D12B2A200147207 /* ConstantString.swift in Sources */,
 				A0781C4B1D12B18D00147207 /* BaseViewController.swift in Sources */,
+				A0F1CE6F1D6439D300E8500A /* RealmConnectorManager.swift in Sources */,
+				A0F1CE721D64598500E8500A /* RealmTestObject.swift in Sources */,
 				A0A4E4F01D61A50D00BA5D16 /* LoginConnectorManager.swift in Sources */,
 				A0A4E4EA1D61936800BA5D16 /* TestNextViewController.swift in Sources */,
 				A0781C071D12A7DC00147207 /* AppDelegate.swift in Sources */,
+				A0FCC67B1D66BEDC00083E7E /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

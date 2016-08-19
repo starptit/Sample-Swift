@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,73 @@ class ViewController: UIViewController {
         super.viewDidLoad()
   
         // Do any additional setup after loading the view.
+        
+//        let testRealm = RealmConnectorManager()
+        
+        let realm = RealmConnectorManager.connectDefault()
+        
+        
+        if(realm == nil){
+            
+            return
+        }
+        
+        let testRealm = RealmConnectorManager(realm: realm!)
+        
+//        testRealm.eraseAllDatabase()
+        
+        testRealm.deleteAllRecordOfCurrentObject(RealmTestObject.self)
+        
+        var copyList:[Object] = []
+        
+        for i in 1..<10 {
+            
+            let addObject:RealmTestObject = RealmTestObject()
+            addObject.idField = String(i)
+            addObject.name = "_Genesis_ Coupe"
+            
+            /*
+            let isExist:Bool = testRealm.isExistingRecord(RealmTestObject.self, primaryKey: addObject.idField)
+            
+            if isExist == false {
+                testRealm.createRecord(addObject)
+            }
+             */
+            
+            
+            copyList.append(addObject)
+        }
+        
+        testRealm.createListRecord(copyList)
+        
+        let updateObject:RealmTestObject? = testRealm.getRecordByPrimaryKey(RealmTestObject.self, idValue: "1") as? RealmTestObject
+        
+        
+        
+        if updateObject != nil {
+            
+//            updateObject!.name = "Acura ZDX"
+            
+            var update = [String:AnyObject]()
+            
+//            update["abc"] = updateObject!.idField
+            update["name"] = "Acura ZDX"
+            
+//            var testUpdate = RealmTestObject()
+//            
+//            testUpdate.name = "BMW X6"
+//            testUpdate.idField = "1"
+            
+//            testRealm.updateRecordByPrimaryKey(updateObject!, idValue: updateObject!.idField)
+            
+            testRealm.updateSpecifiedObjectWithProperties(updateObject!, subSet: update)
+        }
+        
+        let allObject = testRealm.getAllRecord(RealmTestObject.self)
+        
+        print("\(allObject?.count)")
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

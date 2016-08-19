@@ -86,12 +86,16 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-SampleProjectSwift/Alamofire.framework"
   install_framework "Pods-SampleProjectSwift/BFKit.framework"
+  install_framework "Pods-SampleProjectSwift/Realm.framework"
+  install_framework "Pods-SampleProjectSwift/RealmSwift.framework"
   install_framework "Pods-SampleProjectSwift/SDWebImage.framework"
   install_framework "Pods-SampleProjectSwift/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-SampleProjectSwift/Alamofire.framework"
   install_framework "Pods-SampleProjectSwift/BFKit.framework"
+  install_framework "Pods-SampleProjectSwift/Realm.framework"
+  install_framework "Pods-SampleProjectSwift/RealmSwift.framework"
   install_framework "Pods-SampleProjectSwift/SDWebImage.framework"
   install_framework "Pods-SampleProjectSwift/SwiftyJSON.framework"
 fi

@@ -15,26 +15,17 @@ struct APIConnectorManager:ServiceRequestAPI,ServiceResponseAPI {
     var successCallBack:(Any)->()?
     var failureCallBack:(Any)->()?
     
-//    init(successCallBack:(Any)->()?, failureCallBack:(Any)->()?){
-//        self.failureCallBack = failureCallBack
-//        self.successCallBack = successCallBack
-//        
-//    }
-    
     func requestToServer(pathUrl:String,method:Alamofire.Method ,sendData:[String: AnyObject],encodingType: ParameterEncoding,headers:[String:String]){
         
-        let updatePath = String(format: "%@/%@", BASE_URL,pathUrl)
+        let updatePath = String(format: "%@%@", BASE_URL,pathUrl)
         
         print("\(updatePath)")
         
         Alamofire.request(method, updatePath, parameters: sendData, encoding: encodingType, headers: headers)
             .response {
-//                [unowned self]
+                
                 (request, response, returnData, error) in
                 if error != nil {
-                    
-                    print("aaaaaaaa")
-//                    self.returnFailure(error!, fromRequest: request!)
                     
                     self.failureCallBack(error)
                     
@@ -42,7 +33,6 @@ struct APIConnectorManager:ServiceRequestAPI,ServiceResponseAPI {
                     if returnData != nil {
                         let json = JSON(data: returnData!)
                         self.successCallBack(json)
-//                    self.returnSuccess(json, fromRequest: request!)
                     }else {
                         print("Response nil data")
                     }

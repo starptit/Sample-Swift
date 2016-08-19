@@ -32,7 +32,7 @@ class TestNextViewController: UIViewController {
         }
         
         let headers = service.getDefaultHeaders()
-        service.requestToServer("api/post/list", method: .POST, sendData: sendData, encodingType: .JSON,headers: headers)
+        service.requestToServer(SAMPLE_PATH, method: .POST, sendData: sendData, encodingType: .JSON,headers: headers)
 
     }
 
@@ -43,7 +43,7 @@ class TestNextViewController: UIViewController {
     
     @IBAction func actionShare(sender: AnyObject) {
         let shareManager:ShareSNSManager = ShareSNSManager()
-        var shareFb = shareManager.getShareInstance(SNSType.Facebook)
+        var shareFb = shareManager.getShareInstance(ShareType.Facebook)
         
         shareFb?.shareWithObject("")
         

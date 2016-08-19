@@ -11,9 +11,6 @@ import Alamofire
 
 protocol ServiceResponseAPI {
     
-//    func returnSuccess(response:Any, fromRequest:Any)
-//    func returnFailure(error:NSError, fromRequest:Any)
-    
     var successCallBack:(Any)->()? {get set}
     var failureCallBack:(Any)->()? {get set}
 }

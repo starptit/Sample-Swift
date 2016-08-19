@@ -13,4 +13,11 @@ import UIKit
  */
 
 let SAMPLE_STRING:String = ""
-let BASE_URL:String = "http://14.63.219.203:5003"
+
+/******************
+ - API PATH CONSTANT STRING
+ ******************/
+let BASE_URL:String = "http://14.63.219.203:5003/"
+let SAMPLE_PATH:String = "api/post/list"
+
+/***********************************/

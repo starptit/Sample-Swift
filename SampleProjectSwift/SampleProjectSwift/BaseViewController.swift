@@ -6,12 +6,16 @@
 //  Copyright © 2016 _Genesis_. All rights reserved.
 //
 
+
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SDWebImage
+
 
 class BaseViewController: UIViewController{
     
+    /*
     func requestToServer(pathUrl:String,method:Alamofire.Method ,sendData:[String: AnyObject],encodingType: ParameterEncoding,headers:[String:String]){
         
         let updatePath = String(format: "%@/%@", BASE_URL,pathUrl)
@@ -55,5 +59,45 @@ class BaseViewController: UIViewController{
         print("\(error) and \(fromRequest)")
     }
     
+    */
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.setupImageWebCache()
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+        self.clearMemoryCache()
+    }
+    
+    
+    // FIXME: HIGHEST BEWARE FOR SIZE OF CACHING IMAGE
+    func setupImageWebCache(){
+        
+        SDWebImageDownloader.sharedDownloader().shouldDecompressImages = false
+        SDImageCache.sharedImageCache().shouldDecompressImages = false
+        SDImageCache.sharedImageCache().shouldCacheImagesInMemory = false
+        
+        
+        /***
+         BEWARE: THIS LINE WILL SCALE AND COMPRESS RESOLUTION OF CACHING IMAGE.
+         IF YOU WANT TO CACHING WHOLE RATIO AND RESOLUTION OF IMAGE, PLEASE COMMENT IT
+         ***/
+        SDWebImageManager.sharedManager().delegate = ImageLoader.sharedInstance
+        /*** ***/
+        
+    }
+    
+    func clearMemoryCache(){
+        SDImageCache.sharedImageCache().clearMemory()
+        SDImageCache.sharedImageCache().clearDisk()
+    }
+    
 }
+
 

@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'SampleProjectSwift' do
 
-pod 'Alamofire', '~> 3.4'
+pod 'Alamofire'
 # pod 'AFNetworking', '~> 3.0'
 # pod 'BFKit'
 # pod 'AFNetworking', '~> 2.6.3'
@@ -12,8 +12,8 @@ pod 'Alamofire', '~> 3.4'
 # pod 'FBSDKCoreKit'
 # pod 'FBSDKShareKit'
 # pod 'FBSDKLoginKit'
-# pod 'Realm'
-pod 'SDWebImage', '~>3.8'
+pod 'RealmSwift'
+pod 'SDWebImage'
 pod 'SwiftyJSON'
 pod 'BFKit-Swift'
 
